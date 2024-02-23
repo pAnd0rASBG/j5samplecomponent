@@ -1,0 +1,1 @@
+# Sample Joomla 5 Component for training
