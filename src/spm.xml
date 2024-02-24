@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>COM_SPM</name>
+    <author>Christoph Schafflinger</author>
+    <authorEmail>cs@ffmz.at</authorEmail>
+    <authorUrl>ffmz.at</authorUrl>
+    <creationDate>2024-02-24</creationDate>
+    <copyright>(c) 2024 Christoph Schafflinger</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>0.1.0</version>
+    <description><![CDATA[COM_SPM_DESCRIPTION]]></description>
+    <namespace path="src">FreezeFramez\Component\Spm</namespace>
+    <files folder="site">
+    </files>
+    <administration>
+        <files folder="admin">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+        <menu line="option=com_spm" img="class:default">COM_SPM_MENU_BACKEND</menu>
+    </administration>
+</extension>

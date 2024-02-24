@@ -1,0 +1,20 @@
+{
+  "name": "project-manager/mock-data",
+  "description": "A script to generate mock data for the project manager demo",
+  "type": "project",
+  "license": "GPL v2",
+  "autoload": {
+    "psr-4": {
+      "FreezeFramez\\MockData\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Christoph Schafflinger",
+      "email": "cs@ffmz.in"
+    }
+  ],
+  "require": {
+    "fakerphp/faker": "^1.19"
+  }
+}
