@@ -11,13 +11,24 @@
     <description><![CDATA[COM_SPM_DESCRIPTION]]></description>
     <namespace path="src">FreezeFramez\Component\Spm</namespace>
     <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
     </files>
+    <media folder="media" destination="com_spm">
+        <folder>css</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
     <administration>
         <files folder="admin">
+            <folder>forms</folder>
             <folder>services</folder>
             <folder>src</folder>
             <folder>tmpl</folder>
+            <file>access.xml</file>
         </files>
         <menu line="option=com_spm" img="class:default">COM_SPM_MENU_BACKEND</menu>
+        <submenu>
+            <menu link="option=com_spm&amp;view=projects" img="default">COM_SPM_PROJECTS</menu>
+        </submenu>
     </administration>
 </extension>
