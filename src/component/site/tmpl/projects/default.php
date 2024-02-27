@@ -24,7 +24,7 @@ $wam->useStyle('com_spm.projects');
 	<div class="cards row row-col-3">
 		<?php foreach ($this->items as $item) : ?>
 		<div class="card col m-1">
-			<h2><?php echo $item->name; ?></h2>
+			<a href="<?php echo Route::_('index.php?option=com_spm&view=project&id=' . $item->id); ?>"><?php echo $item->name; ?></a>
 			<div id="project-id">
 				<?php echo $item->id; ?>
 			</div>

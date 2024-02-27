@@ -11,11 +11,14 @@ namespace FreezeFramez\Component\Spm\Administrator\Extension;
 use Joomla\CMS\Extension\BootableExtensionInterface;
 use Joomla\CMS\Extension\MVCComponent;
 use Psr\Container\ContainerInterface;
+use Joomla\CMS\Component\Router\RouterServiceTrait;
+use Joomla\CMS\Component\Router\RouterServiceInterface;
 
 defined('_JEXEC') or die;
 
-class SpmComponent extends MVCComponent implements BootableExtensionInterface
+class SpmComponent extends MVCComponent implements BootableExtensionInterface, RouterServiceInterface
 {
+	use RouterServiceTrait;
 	public function boot(ContainerInterface $container)
 	{
 	}
